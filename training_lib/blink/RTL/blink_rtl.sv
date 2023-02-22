@@ -15,7 +15,7 @@ always @(posedge clk50m or negedge reset_n) begin
     else
     begin
         if (counter == 0) begin
-            counter <= 24999999;
+            counter <= 49999999;
             led <= ~led;
         end else begin
             counter <= counter - 1;
